@@ -4,6 +4,7 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx}',  // Adjust the paths to match your project structure
     './public/index.html',
   ],
+  darkMode: 'class', // Enables dark mode based on the class applied to the HTML tag
   theme: {
     extend: {
       screens: {
