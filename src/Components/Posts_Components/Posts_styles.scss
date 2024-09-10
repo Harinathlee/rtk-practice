@@ -1,0 +1,32 @@
+
+.post-card{
+   @apply font-serif rounded-lg drop-shadow-md p-2 text-black shadow-black dark:shadow-white bg-orange-200 dark:bg-orange-100;
+}
+
+.button{
+    @apply bg-blue-500 text-white font-bold py-1 px-3 rounded-2xl m-2;
+    transition: background-color 0.3s ease;
+    &:hover{
+         @apply drop-shadow-xl shadow-black
+    }
+}
+
+.like-button{
+    @apply bg-red-500;
+    &:hover{
+        @apply bg-red-600;
+   }
+    
+}
+.comment-button{
+    @apply  bg-blue-500;
+    &:hover{
+        @apply bg-blue-600;
+   }
+}
+.share-button{
+    @apply bg-green-500;
+    &:hover{
+        @apply bg-green-600;
+   }
+}
