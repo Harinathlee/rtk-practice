@@ -4,29 +4,39 @@
 }
 
 .button{
-    @apply bg-blue-500 text-white font-bold py-1 px-3 rounded-2xl m-2;
+    @apply bg-blue-500 text-white font-bold py-1 px-3 rounded-2xl m-2 flex justify-center justify-items-center;
     transition: background-color 0.3s ease;
     &:hover{
          @apply drop-shadow-xl shadow-black
     }
 }
 
-.like-button{
-    @apply bg-red-500;
+.delete-button{
+    @apply bg-red-500 float-right;
     &:hover{
         @apply bg-red-600;
    }
     
 }
-.comment-button{
-    @apply  bg-blue-500;
+.like-button{
+    @apply  bg-blue-500 float-left;
     &:hover{
         @apply bg-blue-600;
    }
 }
-.share-button{
-    @apply bg-green-500;
-    &:hover{
-        @apply bg-green-600;
-   }
+
+//styles for new post Form
+
+.post-form-inputs{
+    @apply mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm
+}
+.post-form-labels{
+    @apply block text-sm text-black font-bold dark:text-white
+}
+.post-form-buttons{
+   @apply px-4 py-2 text-white rounded-lg font-semibold;
+   transition: background-color 0.3s ease;
+   &:hover{
+    @apply drop-shadow-xl shadow-black
+}
 }

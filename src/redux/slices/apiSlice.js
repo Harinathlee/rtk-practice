@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const apiSlice = createApi({
   reducerPath: "postsapi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://jsonplaceholder.typicode.com/",
+    baseUrl: "http://localhost:5000/api/",
   }),
   endpoints: (builder) => ({
     //end point to fetch all posts
@@ -17,7 +17,7 @@ export const apiSlice = createApi({
     //end point to add post
     addPost: builder.mutation({
       query: (newPost) => ({
-        url: "/posts",
+        url: "/addPost",
         method: "POST",
         body: newPost,
       }),

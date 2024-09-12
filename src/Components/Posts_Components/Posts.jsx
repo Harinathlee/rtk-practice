@@ -6,6 +6,7 @@ import {
   useGetUsersQuery,
 } from "../../redux/slices/apiSlice";
 
+
 const Posts = ({refetch}) => {
   //using rtk-query to fecth data
   const {
@@ -35,7 +36,7 @@ console.log("new posts", posts);
       
       <div className="grid grid-col-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-2 px-2 justify-center">
         {posts?.map((post) => {
-          const user = users?.find((user) => user.id === post.userId);
+          const user = users?.find((user) => user.userId === post.userId);
           return <PostCard key={post.id} post={post} user={user} />;
         })}
       </div>
